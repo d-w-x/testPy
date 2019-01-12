@@ -29,7 +29,7 @@ Strings
       strings = "{1} is good day, {0}"
       print(strings.format("hello", "1.12"))  #1.12 is good day, hello
         ```
-        1. 变形：通过列表索引
+        - 变形：通过列表索引
       ```python
       strings = "{0[0]} is good day, {0[1]}"
       args = ["1.12", "hello"]
@@ -41,7 +41,7 @@ Strings
       strings = "{}: {date} is good day, {greeting}"
       print(strings.format(3, greeting="hello", date="1.12"))  #3: 1.12 is good day, hello
         ```
-        1. 变形：使用字典
+        - 变形：使用字典
       ```python
       strings = "{}: {date} is good day, {greeting}"
       keys = {"greeting": "hello", "date": "1/12"}
@@ -49,16 +49,16 @@ Strings
         ```
                 
       4. 对齐
-        1. “<”表示居左对齐:`print('{:<10}'.format('ABC12abc') + "1")  # :ABC12abc  1`
-        2. ">"表示居右对齐:`print('{:>10}'.format('ABC12abc') + "1")  # :  ABC12abc1`
-        3. "^"表示居中对齐:`print('{:^10}'.format('ABC12abc') + "1")  # : ABC12abc 1`
-        4. 上述均可换成用指定字符填充:`print('{:*^10}'.format('ABC12abc') + "1")  # :*ABC12abc*1` 
+        - “<”表示居左对齐:`print('{:<10}'.format('ABC12abc') + "1")  # :ABC12abc  1`
+        - ">"表示居右对齐:`print('{:>10}'.format('ABC12abc') + "1")  # :  ABC12abc1`
+        - "^"表示居中对齐:`print('{:^10}'.format('ABC12abc') + "1")  # : ABC12abc 1`
+        - 上述均可换成用指定字符填充:`print('{:*^10}'.format('ABC12abc') + "1")  # :*ABC12abc*1` 
       
       5. 进制表示
-        1. “b”表示二进制:`print("{:b}".format(-200)) # -11001000`
-        2. "o"表示八进制:`print("{:o}".format(-200)) # -310`
-        3. "d"表示十进制:`print("{:d}".format(-0b1100)) # -12`
-        4. "x"表示十六进制:`print("{:x}".format(-0b1100)) # -c`
+        - “b”表示二进制:`print("{:b}".format(-200)) # -11001000`
+        - "o"表示八进制:`print("{:o}".format(-200)) # -310`
+        - "d"表示十进制:`print("{:d}".format(-0b1100)) # -12`
+        - "x"表示十六进制:`print("{:x}".format(-0b1100)) # -c`
       
       6. 精度转化
       > |数字|格式|输出|描述
