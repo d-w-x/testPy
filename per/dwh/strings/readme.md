@@ -13,6 +13,11 @@ Strings
     >|whitespace|空格|' \t\n\r\v\f'
     >|printable|可打印内容|上述全部
     
+- 字符串前置
+    1. u/U:表示unicode字符串 
+    2. r/R:非转义的原始字符串：后者所有内容不进行转义。常用于正则表达式，对应着re模块。
+    3. b:bytes，字节码，需要decode
+
 - String Formatting:字符串格式化
         >参见[PEP 3101](https://www.python.org/dev/peps/pep-3101/ "官方文档")
 
@@ -107,4 +112,53 @@ Strings
         7. 可以将内容同format一样进行格式化，形式为`{expression : format}`
         8. lambda表达式建议写在括号里`strings = f"{(lambda x: x * 37) (2)}"`
         
+    
+- string的其他方法:
+
+    |方法|参数|效果|说明
+    |---|---|---|---
+    |capitalize| |首字母大写|
+    |center|width|将字符串扩展到指定宽度并居中|
+    |count|sub[, start[, end]]|从指定位置计算给定字符在原始字符出现次数|
+    |decode|encoding[, errors]|将其从指定字符集解码|1.strict，默认,遇到非法字符时抛出异常<br/>2.ignore，忽略非法字符<br/>3.replace，用?取代非法字符<br/>4.xmlcharrefreplace，使用XML的字符引用
+    |encode|encoding[, errors]|将其编码为指定字符集的字符流|
+    |endswith|suffix[, start[, end]]|检查字符串是否以指定结尾|suffix可以是一组待测值：("1","2","3")
+    |expandtabs|tabsize|将\t展开成指定长度|\t指从该行首算的长度，默认8
+    |find|sub[,start[, end]]|在给定范围查找指定字符串|未找到返回-1
+    |format
+    |index|sub[, start[, end]]|基本同find|不存在产生异常：ValueError: substring not found
+    |isalnum| |至少有一个字符，是字母和数字组合
+    |isalpha| |至少有一个字符，是纯字母
+    |isdecimal| |Unicode数字，全角数字（双字节）|罗马数字，汉字数字False，byte数字（单字节）无此方法。
+    |isdigit| |Unicode数字，byte数字（单字节），全角数字（双字节），罗马数字|汉字False
+    |isnumeric| |Unicode数字、全角数字（双字节）、罗马数字和汉字数字会返回True|byte数字（单字节）无此方法。
+    |isascii| |都是ASCII字符。【空字符也是ASCII字符】
+    |islower| | 包含至少一个区分大小写的字符，这些(区分大小写的)字符都是小写
+    |isidentifier| |是python保留字符
+    |isprintable
+    |isspace
+    |istitle| | |title格式：所有的单词拼写首字母为大写，且其他字母为小写
+    |isupper
+    |join|iterable|过指定字符连接序列中元素后生成的新字符串<br/>如："-".join("32423") ->3-2-4-2-3|字典只对key进行join
+    |__ len __| | |调用len(str)时自动调用
+    |ljust|width[, fillchar]|左对齐，用指定字符填充至长度width
+    |lower
+    |lstrip|chars|删除左空格|如果给定char，则删去开头的char
+    |maketrans|src_str,dis_str[, ignore_str]|生成转换表，将src字符串内容按字节变成dis对应内容，ignore中内容变成空|通过str.maketrans直接调用，生成Dict[int, _T]
+    |translate|table[, deleted]|使用转换表进行转换
+    |max|str|返回字符串中的最大值|<span style="color: #ffb6c1; ">调用方法：max(str)</span>
+    |min|str|返回字符串中的最小值
+    |replace|old, new[, count]| 将字符串中的str1替换成str2， max指定，则替换不超过max次。
+    |rfind|sub[, start[, end]]|从右边开始查找.
+    |rindex|sub[, start[, end]]|从右边开始.
+    |rjust|width[, fillchar]|右对齐
+    |rstrip| |删除末尾空格
+    |split|[sep[, maxsplit]]|切分字符，返回列表|sep默认空格，maxsplit指切分次数，默认-1不限制
+    |splitlines|keepends|按行切分|keepends为True，则保留换行符。
+    |startswith|suffix[, start[, end]]|检查字符串是否以指定结尾|suffix可以是一组待测值：("1","2","3")
+    |strip|chars|删除空格|如果给定char，则删去开头的char
+    |swapcase| |大小写互换
+    |title| |标题化
+    |upper
+    |zfill|width|右对齐，左加0
     
