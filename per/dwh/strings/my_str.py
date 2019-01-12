@@ -32,3 +32,9 @@ print('{:,}'.format(123456789))
 print('{:d}'.format(0x123a))
 print('{:4<8}'.format(0x123a))
 print("{{0}}的转义.{}".format("111", "222"))
+
+# ============================
+print("============================")
+date = "1/12"
+greeting = "hello"
+print(f"{greeting.capitalize()},today is {date}")
