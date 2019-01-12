@@ -1,4 +1,4 @@
-Strings
+#Strings
 
 - constants:常量
     >|常量名|含义|值
@@ -161,4 +161,3 @@ Strings
     |title| |标题化
     |upper
     |zfill|width|右对齐，左加0
-    
