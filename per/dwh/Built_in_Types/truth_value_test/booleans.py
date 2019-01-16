@@ -1,4 +1,4 @@
-class A():
+class A:
     def __init__(self, name):
         self.name = name
 
@@ -10,6 +10,9 @@ class A():
 
     def __contains__(self, item):
         return self.name.__contains__(item)
+
+    def __lt__(self, other):
+        return self.name < other.name
 
 
 print(bool(""))
@@ -26,3 +29,8 @@ b = A("erts")
 print(a is b)
 
 print("e" in a)
+
+a = A(1)
+b = A(2)
+print(a < b)
+# print(a > b)  #expection

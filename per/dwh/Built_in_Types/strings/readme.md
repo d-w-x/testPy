@@ -19,7 +19,7 @@
     3. b:bytes，字节码，需要decode
 
 - String Formatting:字符串格式化
-        >参见[PEP 3101](https://www.python.org/dev/peps/pep-3101/ "官方文档")
+    >参见[PEP 3101](https://www.python.org/dev/peps/pep-3101/ "官方文档")
 
     1. 默认排序：按照顺序一一对应       
         ```python
