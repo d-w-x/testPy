@@ -1,15 +1,15 @@
-#Iterator Types
+# Iterator Types
 
 - 方法：
     1. __ iter __:返回自身，允许迭代器和容器进行for和in操作
     2. __ next __:返回下一个元素，或者抛出StopIteration异常
 
-#Iterable
+# Iterable
 
 支持for...in...迭代<br/>
 通过iter(obj)得到对应的迭代器
 
-#Generator ——生成器
+# Generator ——生成器
 
 惰性计算
 
