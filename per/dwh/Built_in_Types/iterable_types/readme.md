@@ -1,3 +1,4 @@
+
 # Iterator Types
 
 - 方法：
@@ -6,10 +7,11 @@
 
 # Iterable
 
-支持for...in...迭代<br/>
+支持for...in...迭代
+
 通过iter(obj)得到对应的迭代器
 
-# Generator ——生成器
+# Generator —— 生成器
 
 惰性计算
 

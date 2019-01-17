@@ -13,10 +13,10 @@ for i in a:
 
 # =====================================
 def fib(num):
-    n, a, b = 0, 0, 1
+    n, q, b = 0, 0, 1
     while n < num:
         yield b
-        a, b = b, a + b
+        q, b = b, q + b
         n = n + 1
     return 'done'
 

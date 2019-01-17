@@ -1,20 +1,20 @@
-#布尔
+# 布尔
 
 - python中的布尔值
     1. 值不仅是True和False，任何值在满足条件的时候都可以做布尔值
-    2. 1是错的，实质是调用对应值的`__bool__()`方法或者`__len__() != 0`
+    2. 1是错的，实质是调用对应值的`__bool__()`方法或者`__len__() != 0`方法
     3. True = 1,False = 0
     4. 常见的false：
         - 常量：None，False
         - 任何为0的数值：0, 0.0, 0j, Decimal(0), Fraction(0, 1)
-        - 空集合或序列：'', (), [], {}, set(), range(0)
+        - 空集合或序列：'', (), \[\], {}, set(), range(0)
     5. In addition, Booleans are a subtype of integers.
 
 - 布尔运算
     1. and , or , not
     2. 上述优先级在提高
-    3. 布尔运算是最低优先级，因此 `a == not b`是syntax err；`not a == b`等价于` not (a == b)`
-    
+    3. 布尔运算是最低优先级，因此 `a == not b`是syntax err；`not a == b`等价于`not (a == b)`
+
 - 比较
     1. 优先级高于布尔运算
     2. 可以线性比较:`x < y <= z`就是`x < y and y<= z`
@@ -30,4 +30,3 @@
         - __ ge __:大于等于
         - __ eq __:等于
         - __ ne __:不等于
-    
