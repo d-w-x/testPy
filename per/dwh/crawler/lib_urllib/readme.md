@@ -39,7 +39,8 @@ response.close()
 
 1. `request.build_opener(proxy_handler)`使用该语句则修改request的默认代理。
 2. 代理的第一个参数表示支持的协议，一般为`http`或者`https`。
-3. `proxy_handler=urllib.request.ProxyHandler({"http" :"username:password@ip:port"})`使用私密代理
+3. `proxy_handler=urllib.request.ProxyHandler({"http"
+   :"username:password@ip:port"})`使用私密代理
 4. 免费没好货，分秒就过期
 
 ## 保存cookies:
