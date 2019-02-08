@@ -81,4 +81,7 @@ response = request.urlopen(requests)
 response.close()
 ```
 
-注意：url编码+[encode()](../../Built_in_Types/iterable_types/strings/readme.md#string的其他方法)为字符串
+- 注意：
+  - url编码+[encode()](../../Built_in_Types/iterable_types/strings/readme.md#string的其他方法)为字符串
+  - 也可以使用`parse.quote(str, safe=string.printable)`对单个字符编辑。
+
