@@ -43,7 +43,7 @@ response.close()
    :"username:password@ip:port"})`使用私密代理
 4. 免费没好货，分秒就过期
 
-## 保存cookies:
+## 保存cookies
 
 ```python
 from urllib import request
@@ -84,4 +84,3 @@ response.close()
 - 注意：
   - url编码+[encode()](../../Built_in_Types/iterable_types/strings/readme.md#string的其他方法)为字符串
   - 也可以使用`parse.quote(str, safe=string.printable)`对单个字符编辑。
-

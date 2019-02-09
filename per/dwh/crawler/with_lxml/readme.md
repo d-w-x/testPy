@@ -1,6 +1,6 @@
 # 使用lxml库
 
-## 基本使用:
+## 基本使用
 
 ```python
 from lxml import etree
@@ -13,13 +13,14 @@ result = html.xpath("xPath_language")
 上述代码等价于`html = etree.HTML("tencent.html")`，使用不严格的HTML解析。
 
 注意:
+
 - 一般结果是[列表](../../Built_in_Types/iterable_types/list/readme.md#list)
 - 一般可以进行多次解析: `result2 = result.xpath(another_path)`
 - 少数情况下不可解析: 上次解析到文本内容，属性值等。
 
-## xPath语法:
+## xPath语法
 
-### 选取节点:
+### 选取节点
 
 | 表达式    | 描述                                              |
 |:---------|:-------------------------------------------------|
@@ -30,7 +31,7 @@ result = html.xpath("xPath_language")
 | ..       | 选取当前节点的父节点。                               |
 | @        | 选取属性。                                         |
 
-### 谓语:
+### 谓语
 
 | 表达式                             | 描述                                   |
 |:----------------------------------|:--------------------------------------|
@@ -44,7 +45,7 @@ result = html.xpath("xPath_language")
 | `path / @value`                   | `path`的value值                        |
 | `path / text()`                   | `path`的内容                           |
 
-### 通配符:
+### 通配符
 
 | 通配符  | 描述               |
 |:-------|:------------------|
@@ -52,7 +53,7 @@ result = html.xpath("xPath_language")
 | @\*    | 匹配任何属性节点。   |
 | node() | 匹配任何类型的节点。 |
 
-### 运算符:
+### 运算符
 
 | 运算符 | 功能 |
 |:------|:----|
@@ -62,7 +63,7 @@ result = html.xpath("xPath_language")
 | and   | 和  |
 | mod   | 求余 |
 
-### 轴选取:
+### 轴选取
 
 | 轴名称              | 结果                                             |
 |:-------------------|:------------------------------------------------|
