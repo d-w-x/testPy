@@ -133,3 +133,4 @@ venv.bak/
 
 .idea
 /testPy.iml
+*.txt
