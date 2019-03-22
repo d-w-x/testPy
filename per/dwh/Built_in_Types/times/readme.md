@@ -1,6 +1,6 @@
-# time
+# times
 
-- [readme](lib_time/readme.md)提供各种操作时间的函数
+- [time](lib_time/readme.md)提供各种操作时间的函数
 
 - datetime模块定义了下面这几个类:
   - datetime.date:表示日期的类。常用的属性有year, month, day；

@@ -7,7 +7,7 @@
 5. UTC(Coordinated Universal Time,世界协调时)也叫格林威治天文时间，是世界标准时间．在我国为UTC+8
 6. DST(Daylight Saving Time)即夏令时
 
-### 方法
+## 方法
 
 1. time.asctime(\[t\]): 接受时间元组并返回一个可读的形式"Tue May 30 17:17:30
    2017"的24个字符的字符串
